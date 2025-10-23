@@ -17,7 +17,8 @@ pipeline {
                 sh 'sleep 5'
 
                 // Run tests using pytest
-                sh 'pytest -v'
+                sh '/Users/akshithareddyk/Library/Python/3.9/bin/pytest -v'
+
             }
         }
 
@@ -59,4 +60,5 @@ pipeline {
         }
     }
 }
+
 
