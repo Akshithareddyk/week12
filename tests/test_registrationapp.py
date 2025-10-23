@@ -25,7 +25,7 @@ def get_alert_text(driver, timeout=5):
 # Test 1: Empty username
 def test_empty_username(setup_teardown):
     driver = setup_teardown
-    driver.get("http://127.0.0.1:5000/")
+    driver.get("http://192.168.1.102/")
 
     username_field = WebDriverWait(driver, 10).until(
         EC.presence_of_element_located((By.NAME, "username"))
@@ -92,3 +92,4 @@ def test_valid_input(setup_teardown):
     ).text
 
     assert "Hello, Alice! Welcome to the website" in body_text, f"Greeting not found or incorrect: {body_text}"
+
