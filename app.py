@@ -7,6 +7,7 @@ def index():
 def submit():
     # Get data from the form
     username = request.form['username']
-    return render_template('greeting.html', name=username)
+    return render_template('greetings.html', name=username)
 if __name__ == '__main__':
+
     app.run(host='0.0.0.0', port= 5000, debug = True)
